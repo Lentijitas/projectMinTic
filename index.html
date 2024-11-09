@@ -10,31 +10,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <meta name="description" content="Welcome to the most extraordinary hote in Colombia">
     <title>Hotel Bing Bang</title>
 </head>
-<section>
-    <header>
-        <nav id="navbar">
-            <div class="container">
-                <div class="nav">
-                    <h1 class="logo"><a class="nav-link" href="index.html">HBB</a></h1>
-                    <button class="nav-toggle" aria-label="Abrir menú">
+
+<body>
+    <section>
+        <header>
+            <nav id="navbar">
+                <div class="container">
+                    <div class="nav">
+                        <h1 data-aos="fade-left" class="logo"><a class="nav-link" href="index.html">HBB</a></h1>
+                        <button class="nav-toggle" aria-label="Abrir menú">
                         <i class="fas fa-bars nav-toggle"></i>
-                    </button>
-                    <ul class="nav-menu">
-                        <li class="nav-items"><a class="nav-menu-link current" href="../index.html">Home</a></li>
-                        <li class="nav-items"><a class="nav-menu-link" href="../html/login.html">Login</a></li>
-                        <li class="nav-items"><a class="nav-menu-link" href="../html/about.html">About</a></li>
-                        <li class="nav-items"><a class="nav-menu-link " href="../html/services.html">Services</a></li>
-                        <li class="nav-items"><a class="nav-menu-link" href="../html/contact.html">Contact</a></li>
-                    </ul>
+                        </button>
+                        <ul class="nav-menu">
+                            <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link current" href="../index.html">Home</a></li>
+                            <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link" href="../html/login.html">Login</a></li>
+                            <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link" href="../html/about.html">About</a></li>
+                            <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link " href="../html/services.html">Services</a></li>
+                            <li data-aos="fade-down-left" class="nav-items"><a class="nav-menu-link" href="../html/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <section id="centro">
+            </nav>
+        </header>
+    <section data-aos="zoom-out-down" id="centro">
         <div id="showcase">
             <div class="container">
                 <div class="showcase-content">
@@ -49,11 +52,11 @@
             </div>
         </section>
     </section>
-    <section class="bg-dark" id="home-info">
+    <section data-aos="fade-up" class="bg-dark" id="home-info">
         <div class="info-img">
 
         </div>
-        <div class="info-content">
+        <div data-aos="fade-right" class="info-content">
             <h2>
                 <span class="text-primary">The History</span>
                 Of Our Hotel
@@ -67,9 +70,8 @@
         </div>
     </section>
 
-    <section data-aos="fade-up"
-    data-aos-anchor-placement="top-bottom" id="features">
-        <div class="box bg-light">
+    <section id="features">
+        <div data-aos="fade-up-right" class="box bg-light">
             <i class="fas fa-hotel fa-3x"></i>
             <h3>
                 <span class="text-primary">Great</span> Location
@@ -79,7 +81,7 @@
             <a href="html/services.html" class="btn btn-dark">Learn More</a>
         </div>
 
-        <div class="box bg-secondary">
+        <div data-aos="fade-up" class="box bg-secondary">
             <i class="fas fa-utensils fa-3x"></i>
             <h3>
                 <span class="text-secondary">Free</span>
@@ -89,7 +91,7 @@
                 consectetur adipisicing elit. Quod, corporis.</p>
             <a href="html/services.html" class="btn btn-light">Learn More</a>
         </div>
-        <div class="box bg-light">
+        <div data-aos="fade-up-left" class="box bg-light">
             <i class="fas fa-dumbbell fa-3x"></i>
             <h3>
                 <span class="text-primary">Fitness</span>
@@ -106,7 +108,13 @@
     <footer id="main-footer">
         <p>Hotel Bing Bang &copy; 2024, All Rights Reserved</p>
     </footer>
-    <script src="js/menu.js"></script>
-    </body>
+    <script type="module" src="js/menu.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+		AOS.init({
+			duration: 1000,
+		});
+	</script>
+</body>
 
 </html>
